@@ -96,3 +96,106 @@
 .navigator ul li:hover{
     background-color: #18a94a;
 }
+
+.mid {
+    width: 100%;
+    height: 1000px;
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    position: static;
+    width: 100%;
+    height: 250px;
+    background-color: #eeeeee;
+}
+
+.top-footer {
+    width: 100%;
+    height: 90px;
+    background-color: #eeeeee;
+}
+
+#bot-logo {
+    position: absolute;
+    left: 16.6%;
+    padding-bottom: 20px;
+    display: inline-block;
+    width: 50%;
+    margin-top: 22px;
+}
+
+#bot-logo a {
+    font-size: 2.2em;
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: #1699c6;
+    font-weight: bold;
+}
+
+#bot-logo a span {
+    color: #18a94a
+}
+
+.bot-navigator {
+    position: absolute;
+    display: flex;
+    right: 16.6%;
+    margin-top: 35px;
+}
+
+.bot-navigator ul {
+    list-style-type: none;
+}
+
+.bot-navigator ul li {
+    display: inline;
+    padding-left: 30px;
+    text-transform: uppercase;
+    color: #1699c6;
+    font-weight: bold;
+    font-size: .8em;
+}
+
+.mid-footer {
+    position: static;
+    width: 100%;
+    height: 90px;
+    background-color: #dfdfdf;
+}
+
+.mid-footer div {
+    display: inline-flex;
+    margin: 20px 100px 20px;
+    transform: scale(0.8);
+}
+
+.mid-footer div img {
+    margin-right: 10px;
+}
+
+.bot-footer {
+    position: static;
+    width: 100%;
+    height: 40px;
+    background-color: #eeeeee;
+}
+
+.bot-footer p {
+    text-align: center;
+    margin: 30px;
+    font-size: smaller;
+}
