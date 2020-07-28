@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="slides.css">
 
 </head>
 <body>
@@ -38,15 +39,79 @@
 
     <div class="mid">
         <section class="banner">
+            <nav class="banner-navigator">
+                <ul>
+                    <li class="dot" onclick="currentSlide(1)"></li>
+                    <li class="dot" onclick="currentSlide(2)"></li>
+                    <li class="dot" onclick="currentSlide(3)"></li>
+                </ul>
+            </nav>
+            
+            <p>Claritas est etiam processus dynam<br>icus, qui sequitur mutatione</p>
 
+            <div class="slides">
+                <div class="slide fade">
+                    <img  src="./assets/hero-landing.png">
+                </div>
+                <div class="slide fade">
+                    <img  src="./assets/Touching-screen-on-tablet.png">
+                </div>
+                <div class="slide fade">
+                    <img  src="./assets/GTY_iphone_call_sk_140206_33x16_1600.png">
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </section>
 
         <section class="content">
+            <div class="up-text">
+                <h2>Lorem <br><span>ipsum elit</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel rem asperiores quod ipsum vitae quia saepe adipisci commodi praesentium aliquam soluta architecto laboriosam numquam voluptate excepturi cupiditate doloribus beatae a, itaque veritatis illo sed iste. <br><br>Aut totam magni vitae minus aperiam esse necessitatibus delectus rerum, quibusdam ad nulla fugiat natus</br></p>
+            </div>
 
+            <div class="services">
+                <ul>
+                    <li id="shake">
+                        <p>Online telefooncentrale</p>
+                        <div class="icon-container">
+                            <img src="./assets/hand-shake-with--phone-icon-92648.png" alt="shake">
+                        </div>
+                        <h3>_____<span>+</span>_____</h3>
+                    </li>
+                    <li id="call">
+                        <p>Fysieke telefooncentrale</p>
+                        <div class="icon-container">
+                            <img src="./assets/phone42.png" alt="phone">
+                        </div>
+                        <h3>_____<span>+</span>_____</h3>
+                    </li>
+                    <li id="headset">
+                        <p>Toestellen, headsets & softphones</p>
+                        <div class="icon-container">
+                            <img src="./assets/headset.png" alt="headset">
+                        </div>
+                        <h3>_____<span>+</span>_____</h3>
+                    </li>
+                    <li id="stack">
+                        <p>Maandabonnementen voip</p>
+                        <div class="icon-container">
+                            <img src="./assets/stack.png" alt="stack">
+                        </div>
+                        <h3>_____<span>+</span>_____</h3>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="down-text">
+                <h2>Producten <br>diensten</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, velit. Reiciendis voluptas doloremque facere vel praesentium molestias adipisci quibusdam, dignissimos, eum voluptatem exercitationem ratione velit incidunt explicabo qui. Quaerat porro dicta ea ut! Ipsam voluptate aut porro ut illum dignissimos.</p>
+            </div>
         </section>
 
         <section class="map">
-
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2507.3849716363297!2d3.688272015285121!3d51.06444317956474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c371a74ff26d11%3A0x5cbb38f825317e38!2sPeerstraat%20184b%2C%209000%20Gent%2C%20Belgium!5e0!3m2!1sen!2s!4v1595908001090!5m2!1sen!2s" width=100% height=400px frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </section>
     </div>
 
@@ -88,5 +153,6 @@
         </section>
     </footer>
 
+    <script src="./main.js"></script>
 </body>
 </html>
