@@ -1,5 +1,9 @@
+var sliders = document.getElementById("trigger");
 var slideIndex = 1;
+var timer;
+
 showSlides(slideIndex);
+autoSlides();
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -21,7 +25,7 @@ function showSlides(n) {
     for (i = 0; i < dots.length; i++) {
         dots[i].style.backgroundColor = "white";
     }
-    if (slideIndex > slides.length) {slideIndex = 1}
+    if (slideIndex > slides.length) slideIndex = 1
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].style.backgroundColor = "#0d9247";
 }
@@ -34,11 +38,19 @@ function autoSlides() {
         slides[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+        dots[i].style.backgroundColor = "white";
     }
     slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}
+    if (slideIndex > slides.length) slideIndex = 1;
     slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-    setTimeout(autoSlides,3000);
+    dots[slideIndex-1].style.backgroundColor = "#0d9247";
+    timer = setTimeout(autoSlides,3000);
 }
+
+sliders.onmouseover = function() {
+    clearTimeout( timer );
+}
+
+sliders.onmouseout = function() {
+    timer = setTimeout( autoSlides, 3000 );
+};
