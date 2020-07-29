@@ -14,7 +14,7 @@ a, button, li, nav :hover {
     cursor: pointer;
 }
 
-.hero {
+.top__header {
     position: relative;
     margin-left: 16.6%;
     width: 67%;
@@ -22,7 +22,7 @@ a, button, li, nav :hover {
     background-color: white;
 }
 
-#logo {
+#top__header__logo {
     position: absolute;
     left: 0;
     top: 20px;
@@ -30,7 +30,7 @@ a, button, li, nav :hover {
     width: 50%;
 }
 
-#logo a {
+#top__header__logo a {
     font-size: 2.2em;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
@@ -40,41 +40,46 @@ a, button, li, nav :hover {
     font-weight: bold;
 }
 
-#logo a span {
+#top__header__logo a span {
     color: #18a94a
 }
 
-#right-sec {
+#top__header__right {
     position: absolute;
     display: flex;
     right: 0;
     top: 25px;
 }
-.hero ul {
+.top__header ul {
     list-style-type: none;
     padding-top: 10px;   
 }
 
-.hero ul li {
+.top__header ul li {
     display: inline;
     padding-right: 4px;
     font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
     border-right: 2px solid black;
 }
 
-.hero ul li:last-child{
+.top__header ul li:first-child{
+    color: #1699c6;
+}
+
+.top__header ul li:last-child{
     border-right: none;
     padding-right: 20px;
 }
 
-.buttons {
-    /* display: inline-block; */
+.top__header__right__buttons {
     padding-bottom: 20px;
 }
 
-.buttons button {
+.top__header__right__buttons button {
     color: white;
     font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
     padding: 15px 27px;
     border: 0px;
     text-transform: uppercase;
@@ -88,29 +93,31 @@ a, button, li, nav :hover {
     background-color: #7dc242;
 }
 
-.navigator{
+.top__navigator {
     width: 100%;
     height: 100px;
     margin-top: 40px;
     background-color: #1699c6;
 }
 
-.navigator ul {
+.top__navigator ul {
     list-style-type: none;
     font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    font-size: 1.1em;
     text-align: center;
 }
 
-.navigator ul li {
+.top__navigator ul li {
     display: inline-block;
     height: 100px;
     padding: 40px;
-    margin-right: 20px;
+    margin-right: 10px;
     color: white;
     text-transform: uppercase;
 }
 
-.navigator ul li:hover{
+.top__navigator ul li:hover{
     background-color: #18a94a;
 }
 
@@ -120,14 +127,14 @@ a, button, li, nav :hover {
     position: relative;
 }
 
-.banner {
+.mid__banner {
     position: relative;
     width: 100%;
     height: 450px;
     background-color: blueviolet;
 }
 
-.banner::before{
+.mid__banner::before{
     content: '';
     width: 25%;
     height: 200px;
@@ -177,6 +184,7 @@ a, button, li, nav :hover {
     margin-right: 30px;
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif; 
+    font-weight: bolder;
     text-align: right;
     color: #1699c6;
     font-size: 2.5em;
@@ -227,6 +235,7 @@ a, button, li, nav :hover {
     text-align: center;
     font-size: 0.6em;
     font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
     color: #1699c6;
     text-transform: uppercase;
 }
@@ -319,6 +328,7 @@ h3 span {
     color: #1699c6;
     font-size: 2.5em;
     font-family: 'Railway', sans-serif;
+    font-weight: bolder;
     letter-spacing: 2px;
     line-height: .9em;
     text-transform: uppercase;
@@ -367,6 +377,7 @@ footer {
 #bot-logo a {
     font-size: 2.2em;
     font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
     text-decoration: none;
     letter-spacing: 3px;
     color: #1699c6;
@@ -391,6 +402,7 @@ footer {
 .bot-navigator ul li {
     display: inline;
     font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
     margin-left: 30px;
     text-transform: uppercase;
     color: #1699c6;

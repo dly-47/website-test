@@ -10,23 +10,23 @@
 </head>
 <body>
     <header class="top">
-        <section class="hero">
-            <div id="logo">
+        <div class="top__header">
+            <div id="top__header__logo">
                 <a href="#">LO<span>GO</span></a>
             </div>
-            <div id="right-sec">
+            <div id="top__header__right">
                 <ul>
                     <li>NL</li>
                     <li>FR</li>
                     <li>EN</li>
                 </ul>
-                <div class="buttons">
+                <div class="top__header__right__buttons">
                     <button id="s-up">Sign up</button>
                     <button id="sp">Support</button>
                 </div>
             </div>
-        </section>
-        <nav class="navigator">
+        </div>
+        <nav class="top__navigator">
             <ul>
                 <li>Home</li>
                 <li>Producten & Diensten</li>
@@ -38,7 +38,7 @@
     </header>
 
     <div class="mid">
-        <section class="banner">
+        <div class="mid__banner">
             <nav class="banner-navigator">
                 <ul>
                     <li class="dot" onclick="currentSlide(1)"></li>
@@ -49,7 +49,7 @@
             
             <p>Claritas est etiam processus dynam<br>icus, qui sequitur mutatione</p>
 
-        <div class="slides" id="trigger">
+            <div class="slides" id="trigger">
                 <div class="slide fade">
                     <img  src="./assets/hero-landing.png" alt="h-landing">
                 </div>
@@ -63,7 +63,7 @@
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </section>
+        </div>
 
         <section class="content">
             <div class="content-container">
@@ -130,13 +130,13 @@
             
         </section>
 
-        <section class="map">
+        <div class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2507.3849716363297!2d3.688272015285121!3d51.06444317956474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c371a74ff26d11%3A0x5cbb38f825317e38!2sPeerstraat%20184b%2C%209000%20Gent%2C%20Belgium!5e0!3m2!1sen!2s!4v1595908001090!5m2!1sen!2s" height=400 style="border:0; width:100%" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </section>
+        </div>
     </div>
 
     <footer class="bottom">
-        <section class='top-footer'>
+        <div class='top-footer'>
             <div class='top-footer-container'>
                 <div id="bot-logo">
                     <a href="#">LO<span>GO</span></a>
@@ -151,9 +151,9 @@
                     </ul>
                 </nav>
             </div>
-        </section>
+        </div>
 
-        <section class="mid-footer">
+        <div class="mid-footer">
             <div id="address">
                 <img src="./assets/placeholder9.png" alt="placeholder">
                 <p>Peerstaraat 184B <br> 9030 Gents </p>
@@ -168,11 +168,11 @@
                 <img src="./assets/envelope2.png" alt="envelope">
                 <p>Email: info@website.be</p>
             </div>
-        </section>
+        </div>
 
-        <section class="bot-footer">
+        <div class="bot-footer">
             <p>© 2015 Copyright LOGO. Created by Viivue Web Design Company</p>
-        </section>
+        </div>
     </footer>
 
     <script src="./slider.js"></script>

@@ -44,7 +44,7 @@ function autoSlides() {
     if (slideIndex > slides.length) slideIndex = 1;
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].style.backgroundColor = "#0d9247";
-    timer = setTimeout(autoSlides,3000);
+    timer = setTimeout(autoSlides,2000);
 }
 
 sliders.onmouseover = function() {
@@ -52,5 +52,5 @@ sliders.onmouseover = function() {
 }
 
 sliders.onmouseout = function() {
-    timer = setTimeout( autoSlides, 3000 );
+    timer = setTimeout( autoSlides, 2000 );
 };
