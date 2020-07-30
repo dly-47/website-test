@@ -111,9 +111,3 @@
         width: 500px;
     }
 }
-
-@media (max-width: 768px) {
-    .banner-navigator {
-        left: -30px;
-    }
-}
