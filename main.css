@@ -136,14 +136,19 @@ a, button, li, nav :hover {
 
 .mid__banner::before{
     content: '';
-    width: 25%;
-    height: 190px;
-    background-color: #1699c6;
+    /* width: 25%;
+    height: 190px; */
+    /* background-color: #1699c6; */
     position: absolute;
-    clip-path: polygon(0 0, 0% 100%, 100% 100%);
-    left: 0;
+    /* clip-path: polygon(0 0, 0% 100%, 100% 100%); */
+    right: 75%;
     bottom: 0;
     z-index: 1;
+
+    width: 0;
+    height: 0;
+    border-bottom: 1800px solid #1699c6;
+    border-right: 5000px solid transparent;
 }
 
 .content {
@@ -151,16 +156,23 @@ a, button, li, nav :hover {
     width: 100%;
     height: 800px;
     background-color: white;
+    overflow:hidden;
 }
 
-.content::after{
+.content::before{
     content: '';
-    width: 75%;
-    height: 600px;
-    background-color: #efefef;
+    /* width: 100%; */
+    /* height: 600px;
+    background-color: #efefef; */
     position: absolute;
-    right: 0;
-    clip-path: polygon(0 0, 100% 100%, 100% 0);
+    left: 25%;
+    top: 0;
+    /* clip-path: polygon(0 0, 100% 100%, 100% 0); */
+    width: 0;
+    height: 0;
+    border-top: 2000px solid #efefef;
+    border-left: 5000px solid transparent;
+    z-index: 1;
 }
 
 .content-container {
@@ -461,17 +473,6 @@ footer {
         left: 12%;
     }
 
-    .mid__banner::before{
-        width: 22%;
-        height: 170px;
-
-    }
-
-    .content::after{
-        width: 78%;
-        height: 580px;
-    }
-
     .top-footer-container {
         width: 76%;
         left: 12%;
@@ -490,14 +491,14 @@ footer {
     }
 
     .mid__banner::before{
-        width: 20%;
-        height: 150px;
+        border-bottom: 2600px solid #1699c6;
+        border-right: 5000px solid transparent;
 
     }
 
-    .content::after{
-        width: 80%;
-        height: 560px;
+    .content::before{
+        border-top: 2800px solid #efefef;
+        border-left: 5000px solid transparent;
     }
 
     .top-footer-container {
