@@ -20,7 +20,7 @@
 
 .mid__banner img {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .banner-navigator {
@@ -88,4 +88,32 @@
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+}
+
+@media (max-width: 1600px) {
+    .mid__banner img {
+        height: 100%;
+    }
+
+    .banner-navigator {
+        left: 0px;
+    }
+
+    .mid__banner p {
+        left: 12%;
+    }
+}
+
+@media (max-width: 1380px) {
+    .mid__banner p {
+        left: 5%;
+        font-size: 30px;
+        width: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-navigator {
+        left: -30px;
+    }
 }
