@@ -219,7 +219,7 @@ a, button, li, nav :hover {
     position: absolute;
     width: 100%;
     left: 0;
-    top: 40%;
+    top: 35%;
     
 }
 .services ul {
@@ -461,15 +461,16 @@ footer {
     font-size: smaller;
 }
 
+/* -- ReponsiveDesign -- */
 
 @media (max-width: 1800px) {
     .top__header {
         margin-left: 12%;
-        width: 76%;
+        width: 76%; 
     }
 
     .content-container {
-        width: 77%;
+        width: 76%;
         left: 12%;
     }
 
@@ -491,14 +492,21 @@ footer {
     }
 
     .mid__banner::before{
-        border-bottom: 2600px solid #1699c6;
+        border-bottom: 2600px solid #1699c6;    
         border-right: 5000px solid transparent;
-
     }
 
     .content::before{
         border-top: 2800px solid #efefef;
         border-left: 5000px solid transparent;
+    }
+
+    .services ul {
+        transform: rotate(30deg);
+    }
+    
+    .services ul li {
+        transform: rotate(-30deg);
     }
 
     .top-footer-container {
@@ -519,14 +527,13 @@ footer {
     }   
 
     .mid__banner::before{
-        width: 18%;
-        height: 140px;
-
+        border-bottom: 3400px solid #1699c6;    
+        border-right: 5000px solid transparent;
     }
 
-    .content::after{
-        width: 82%;
-        height: 570px;
+    .content::before{
+        border-top: 3600px solid #efefef;
+        border-left: 5000px solid transparent;
     }
 
     .top-footer-container {
@@ -534,45 +541,17 @@ footer {
         left: 9%;
     }
 
+    .services {
+        top: 33%;
+        width: 105%;
+        left: -10%;
+    }
+
     .services ul {
-        transform: rotate(27deg);
+        transform: rotate(36deg);
     }
     
     .services ul li {
-        transform: rotate(-27deg);
+        transform: rotate(-36deg);
     }
 }
-
-@media (max-width: 1000px) {
-    .services ul {
-        transform: rotate(35deg);
-        width: 700px;   
-    }
-    
-    .services ul li {
-        transform: rotate(-35deg);
-        margin-right: 80px;
-        margin-top: 10px;
-        background-color: transparent;
-    }
-
-    .down-text {
-        width: 400px;
-    }
-
-    .bot-navigator ul li {
-        margin-left:10px;
-    }
-}
-
-@media (max-width: 768px) {
-    .services ul {
-        transform: rotate(45deg);
-    }
-    
-    .services ul li {
-        transform: rotate(-45deg);
-    }
-}
-
-
