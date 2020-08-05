@@ -289,6 +289,18 @@ h3 span {
     margin-left: 1px;
 }
 
+.curved {
+    height: 105px;
+    position:absolute;
+    /* transform:rotate(-90deg); */
+    transform-origin:0 100%;
+    left:50%;
+    bottom:50%;
+    font-size: 1.3em;
+    font-weight:bold;
+
+}
+
 .lines {
     position: relative;
     margin: auto;
