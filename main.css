@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&family=Raleway:wght@500;700;900&display=swap');
 
-/* 
-font-family: 'Dosis', sans-serif;
-font-family: 'Raleway', sans-serif; 
-*/
-
 * {
     margin: 0;
     box-sizing: border-box;
@@ -22,7 +17,7 @@ a, button, li, nav :hover {
     background-color: white;
 }
 
-#top__header__logo {
+#top__logo {
     position: absolute;
     left: 0;
     top: 20px;
@@ -30,7 +25,7 @@ a, button, li, nav :hover {
     width: 50%;
 }
 
-#top__header__logo a {
+#top__logo a {
     font-size: 2.2em;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
@@ -40,11 +35,11 @@ a, button, li, nav :hover {
     font-weight: bold;
 }
 
-#top__header__logo a span {
+#top__logo a span {
     color: #18a94a
 }
 
-#top__header__right {
+#top__right {
     position: absolute;
     display: flex;
     right: 0;
@@ -72,11 +67,11 @@ a, button, li, nav :hover {
     padding-right: 20px;
 }
 
-.top__header__right__buttons {
+.top__buttons {
     padding-bottom: 20px;
 }
 
-.top__header__right__buttons button {
+.top__buttons button {
     color: white;
     font-family: 'Raleway', sans-serif;
     font-weight: bolder;
@@ -132,19 +127,15 @@ a, button, li, nav :hover {
     width: 100%;
     height: 450px;
     background-color: blueviolet;
+    overflow: hidden;
 }
 
 .mid__banner::before{
     content: '';
-    /* width: 25%;
-    height: 190px; */
-    /* background-color: #1699c6; */
     position: absolute;
-    /* clip-path: polygon(0 0, 0% 100%, 100% 100%); */
     right: 75%;
     bottom: 0;
     z-index: 1;
-
     width: 0;
     height: 0;
     border-bottom: 1800px solid #1699c6;
@@ -161,13 +152,9 @@ a, button, li, nav :hover {
 
 .content::before{
     content: '';
-    /* width: 100%; */
-    /* height: 600px;
-    background-color: #efefef; */
     position: absolute;
     left: 25%;
     top: 0;
-    /* clip-path: polygon(0 0, 100% 100%, 100% 0); */
     width: 0;
     height: 0;
     border-top: 2000px solid #efefef;
@@ -182,7 +169,7 @@ a, button, li, nav :hover {
     left: 16.6%;
 }
 
-.up-text {
+.content__up-text {
     width: 60%;
     display: flex;
     position: absolute;
@@ -191,7 +178,7 @@ a, button, li, nav :hover {
     z-index: 1;
 }
 
-.up-text h2 {
+.content__up-text h2 {
     width: 500px;
     margin-right: 30px;
     text-transform: uppercase;
@@ -204,25 +191,25 @@ a, button, li, nav :hover {
     line-height: .6em;
 }
 
-.up-text h2 span {
+.content__up-text h2 span {
     font-size: .4em;
 }
 
-.up-text p {
+.content__up-text p {
     width: 1000px;
     font-size: .9em;
     font-family: 'Dosis', sans-serif;
     text-align: justify;
 }
 
-.services {
+.content__services {
     position: absolute;
     width: 100%;
     left: 0;
     top: 35%;
     
 }
-.services ul {
+.content__services ul {
     list-style-type: none;
     width: 100%;
     display: flex;
@@ -230,7 +217,7 @@ a, button, li, nav :hover {
     transform: rotate(22deg);
 }
 
-.services ul li {
+.content__services ul li {
     display: inline-block;
     transform: rotate(-22deg);
     border-radius: 50%;
@@ -242,10 +229,10 @@ a, button, li, nav :hover {
 }
 
 
-.services ul li p {
+.content__services ul li p {
     display: inline-block;
     text-align: center;
-    font-size: 0.6em;
+    font-size: .85em;
     font-family: 'Raleway', sans-serif;
     font-weight: bolder;
     color: #1699c6;
@@ -278,7 +265,7 @@ h3 span {
     
 }
 
-.services ul li div {
+.content__services ul li div {
     text-align: center;
     display: inline-block;
     width: 160px;
@@ -287,6 +274,17 @@ h3 span {
     border-radius: 50%;
     margin-top: 20px;
     margin-left: 1px;
+}
+
+.curved {
+    height: 105px;
+    position:absolute;
+    transform-origin:0 100%;
+    left:50%;
+    bottom:50%;
+    font-size: 1.3em;
+    font-weight:bold;
+
 }
 
 .lines {
@@ -326,7 +324,7 @@ h3 span {
 }
 
 
-.down-text {
+.content__down-text {
     position: absolute;
     width: 500px;
     height: 200px;
@@ -336,7 +334,7 @@ h3 span {
     text-align: justify;
 }
 
-.down-text h2 {
+.content__down-text h2 {
     color: #1699c6;
     font-size: 2.5em;
     font-family: 'Railway', sans-serif;
@@ -348,11 +346,11 @@ h3 span {
     text-align: justify;
 }
 
-.down-text p {
+.content__down-text p {
     font-family: 'Dosis', sans-serif;
 }
 
-.map {
+.content__map {
     width: 100%;
     height: 400px;
 }
@@ -364,7 +362,7 @@ footer {
     background-color: #eeeeee;
 }
 
-.top-footer {
+.bottom__top-footer {
     position: relative;
     width: 100%;
     height: 90px;
@@ -422,7 +420,7 @@ footer {
     font-size: .8em;
 }
 
-.mid-footer {
+.bottom__mid-footer {
     position: relative;
     width: 100%;
     height: 90px;
@@ -431,30 +429,30 @@ footer {
 }
 
 
-.mid-footer div {
+.bottom__mid-footer div {
     display: inline-flex;
     margin: 25px 50px 20px;
     transform: scale(0.8);
 }
 
-.mid-footer div p {
+.bottom__mid-footer div p {
     font-family: 'Dosis', sans-serif;
 }
 
 
 
-.mid-footer div img {
+.bottom__mid-footer div img {
     margin-right: 10px;
 }
 
-.bot-footer {
+.bottom__bot-footer {
     position: relative;
     width: 100%;
     height: 40px;
     background-color: #eeeeee;
 }
 
-.bot-footer p {
+.bottom__bot-footer p {
     text-align: center;
     font-family: 'Dosis', sans-serif;
     margin: 30px;
@@ -501,11 +499,11 @@ footer {
         border-left: 5000px solid transparent;
     }
 
-    .services ul {
+    .content__services ul {
         transform: rotate(30deg);
     }
     
-    .services ul li {
+    .content__services ul li {
         transform: rotate(-30deg);
     }
 
@@ -541,17 +539,17 @@ footer {
         left: 9%;
     }
 
-    .services {
+    .content__services {
         top: 33%;
         width: 105%;
         left: -10%;
     }
 
-    .services ul {
+    .content__services ul {
         transform: rotate(36deg);
     }
     
-    .services ul li {
+    .content__services ul li {
         transform: rotate(-36deg);
     }
 }
