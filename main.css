@@ -274,16 +274,19 @@ footer {
 /* -- ReponsiveDesign -- */
 
 @media (max-width: 1800px) {
+    /* HEADER */
     .top__header {
         margin-left: 12%;
         width: 76%; 
     }
 
+    /* MAIN BODY */
     .content-container {
         width: 76%;
         left: 12%;
     }
 
+    /* FOOTER */
     .top-footer-container {
         width: 76%;
         left: 12%;
@@ -291,34 +294,29 @@ footer {
 }
 
 @media (max-width: 1600px) {
+    /* HEADER */
     .top__header {
         margin-left: 10%;
         width: 80%;
     }
 
+    /* MAIN BODY */
     .content-container {
         width: 80%;
         left: 10%;
     }
-
     .mid__banner::before{
         border-bottom: 2600px solid #1699c6;    
         border-right: 5000px solid transparent;
     }
-
     .content::before{
         border-top: 2800px solid #efefef;
         border-left: 5000px solid transparent;
     }
+    .content__services ul { transform: rotate(30deg);}
+    .content__services ul li { transform: rotate(-30deg);}
 
-    .content__services ul {
-        transform: rotate(30deg);
-    }
-    
-    .content__services ul li {
-        transform: rotate(-30deg);
-    }
-
+    /* FOOTER */
     .top-footer-container {
         width: 80%;
         left: 10%;
@@ -326,42 +324,35 @@ footer {
 }
 
 @media (max-width: 1380px) {
+    /* HEADER */
     .top__header {
         margin-left: 9%;
         width: 82%;
     }
 
+    /* MAIN BODY */
     .content-container {
         width: 82%;
         left: 9%;
-    }   
-
+    }
     .mid__banner::before{
         border-bottom: 3400px solid #1699c6;    
         border-right: 5000px solid transparent;
     }
-
     .content::before{
         border-top: 3600px solid #efefef;
         border-left: 5000px solid transparent;
     }
+    .content__services {
+        top: 33%; left: -10%;
+        width: 105%;
+    }
+    .content__services ul { transform: rotate(36deg);}
+    .content__services ul li { transform: rotate(-36deg);}
 
+    /* FOOTER */
     .top-footer-container {
         width: 82%;
         left: 9%;
-    }
-
-    .content__services {
-        top: 33%;
-        width: 105%;
-        left: -10%;
-    }
-
-    .content__services ul {
-        transform: rotate(36deg);
-    }
-    
-    .content__services ul li {
-        transform: rotate(-36deg);
     }
 }
